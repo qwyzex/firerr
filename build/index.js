@@ -1,7 +1,8 @@
 "use strict";
-
+exports.__esModule = true;
+exports.firerrGen = void 0;
 // non-react
-export default function firerr(code: string, setState: any) {
+function firerr(code, setState) {
     switch (code) {
         case "auth/missing-email":
             setState("please insert an email address");
@@ -161,8 +162,8 @@ export default function firerr(code: string, setState: any) {
             break;
     }
 }
-
-export function firerrGen(code: string, state: any) {
+exports["default"] = firerr;
+function firerrGen(code, state) {
     switch (code) {
         case "auth/missing-email":
             state.value = "please insert an email address";
@@ -323,3 +324,4 @@ export function firerrGen(code: string, state: any) {
             break;
     }
 }
+exports.firerrGen = firerrGen;

@@ -1,19 +1,42 @@
 {
     "name": "firerr",
-    "version": "1.0.0",
-    "description": "",
+    "version": "0.0.1",
+    "description": "Package For Catching FIrebase Error",
     "main": "index.js",
+    "keywords": [
+        "firebase",
+        "error",
+        "handling"
+    ],
+    "author": {
+        "name": "qwyzex",
+        "email": "qwyzex@yandex.com",
+        "url": "https://github.com/qwyzex"
+    },
+    "license": "MIT",
+    "publisher": "qwyzex",
+    "homepage": "https://github.com/qwyzex/firerr",
+    "bugs": {
+        "url": "https://github.com/qwyzex/firerr/issues/new",
+        "email": "xaliscoral@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/qwyzex/firerr"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon"
+        "dev": "nodemon",
+        "ts": "tsc -w"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
     "devDependencies": {
         "@types/node": "^17.0.13",
         "nodemon": "^2.0.15",
         "ts-node": "^10.4.0",
         "typescript": "^4.5.5"
-    }
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "engineStrict": true
 }
