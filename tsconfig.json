@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "baseUrl": "./",
+        "strict": true,
+        "jsx": "react-jsx",
+        "rootDir": "src",
+        "outDir": "build/",
+        "resolveJsonModule": true,
+        "lib": ["ES6"],
+        "noImplicitAny": true,
+        "incremental": true,
+        "noUnusedLocals": true,
+        "moduleResolution": "node"
+    },
+    "include": ["./src/*"],
+    "exclude": ["node_modules"]
+}
