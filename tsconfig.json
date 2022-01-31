@@ -1,13 +1,12 @@
 {
     "compilerOptions": {
+        "strict": true,
         "allowJs": true,
         "baseUrl": "./",
-        "strict": true,
-        "jsx": "react-jsx",
-        "rootDir": "src",
-        "outDir": "lib/",
-        "resolveJsonModule": true,
+        "outDir": "./",
+        "jsx": "preserve",
         "lib": ["ES6"],
+        "resolveJsonModule": true,
         "noImplicitAny": true,
         "incremental": true,
         "noUnusedLocals": true,

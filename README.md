@@ -24,7 +24,6 @@ async function login(e) {
     }).catch((error) => {
         const code = error.code;
         firerr(code, formError)
-        // with 'formError' is the variables that we specified earlier
     })
 }
 ```

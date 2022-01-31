@@ -1,4 +1,9 @@
-export default function firerr(code: string, setState: any) {
+/**
+ * @description Declare a variable and Catch Firebase Error Response
+ * @param code The error code response from Firebse (const code = error.code)
+ * @param setState The state or variables (if you prefer) for storing the Error Value
+ */
+const firerr = (code: string, setState: any) => {
     switch (code) {
         case "auth/missing-email":
             setState("please insert an email address");
@@ -82,16 +87,16 @@ export default function firerr(code: string, setState: any) {
             setState("User is null");
             break;
         case "auth/invalid-api-key":
-            setState("invalid api key");
+            setState("Invalid api key");
             break;
         case "auth/network-request-failed":
-            setState("can't connect to the server");
+            setState("Can't connect to the server");
             break;
         case "auth/requires-recent-login":
             setState("Auth require recent login");
             break;
         case "auth/too-many-requests":
-            setState("Too many request to the server right now, please try again later");
+            setState("Account is temporarily disabled due to too many request");
             break;
         case "auth/id-token-expired":
             setState("id token is expired");
@@ -124,37 +129,39 @@ export default function firerr(code: string, setState: any) {
             setState("session cookie duration is invalid");
             break;
         case "auth/invalid-uid":
-            setState("invalid user id");
+            setState("Invalid user id");
             break;
         case "auth/maximum-user-count-exceeded":
-            setState("maximum user count is exceeded");
+            setState("Maximum user count is exceeded");
             break;
         case "auth/missing-uid":
-            setState("missing user id");
+            setState("Missing user id");
             break;
         case "auth/session-cookie-revoked":
-            setState("session cookie is revoked");
+            setState("Session cookie is revoked");
             break;
         case "auth/uid-alread-exists":
-            setState("user id is already exist");
+            setState("User id is already exist");
             break;
         case "auth/email-already-exists":
-            setState("email is already exist, please try another address");
+            setState("Email is already exist, please try another email address");
             break;
         case "auth/phone-number-already-exists":
-            setState("phone number is already exist");
+            setState("Phone number is already exist");
             break;
         case "auth/project-not-found":
-            setState("firebase project not found");
+            setState("Firebase project not found");
             break;
         case "auth/insufficient-permission":
-            setState("insufficient permisson, you are not allowed to do this");
+            setState("Insufficient permisson, you are not allowed to do this operation");
             break;
         case "auth/internal-error":
-            setState("an unknown error occured on the client");
+            setState("An unknown error occured on the client");
             break;
         default:
             setState("");
             break;
     }
-}
+};
+
+export default firerr;
