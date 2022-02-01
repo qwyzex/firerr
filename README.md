@@ -1,6 +1,6 @@
 # FirErr
 
-FirErr is a package for catching Firebase Errors that often pop in development. Firebase can only send one response at a time, so catching it _one-by-one_ is not that bad, I think.
+FirErr is a package for catching Firebase Errors that often occurs. Firebase can only send one response at a time, so catching it _one-by-one_ is not that bad, I think.
 
 ## 🤔 Usage
 
