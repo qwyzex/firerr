@@ -2,7 +2,7 @@
 
 FirErr is a package for catching Firebase Errors that often pop in development. Firebase can only send one response at a time, so catching it _one-by-one_ is not that bad, I think.
 
-## Usage
+## 🤔 Usage
 
 You can use it by defining a state, or variables that store the Firebase Error Message :
 
@@ -12,7 +12,7 @@ import { useState } from "react";
 const [formError, setFormError] = useState("");
 ```
 
-Then do some Firebase Stuff :
+Then do some 🔥 Firebase Stuff :
 
 ```
 async function login(e) {
@@ -27,3 +27,7 @@ async function login(e) {
     })
 }
 ```
+
+> 🥶 Idk who install this package tho... 
+> This is my very first NPM Package.
+> I am very sorry if there's a problem! I'm only 14 yo, 15 next September 🤧
