@@ -1,12 +1,14 @@
+"use strict";
+exports.__esModule = true;
 /**
  * @description Declare a variable and Catch Firebase Error Response
  * @param code The error code response from Firebse (const code = error.code)
  * @param setState The state or variables (if you prefer) for storing the Error Value
  */
-const firerr = (code: string, setState: any) => {
+function firerr(code, setState) {
     switch (code) {
         case "auth/missing-email":
-            setState("please insert an email address");
+            setState("Please insert an email address");
             break;
         case "auth/weak-password":
             setState("Password Must Be At Least 6 Characters");
@@ -30,11 +32,7 @@ const firerr = (code: string, setState: any) => {
             setState("Request timeout, try again later");
             break;
         case "auth/argument-error":
-            setState("an unknown error occured");
-            break;
         case "auth/invalid-persistence-type":
-            setState("an unknown error occured");
-            break;
         case "auth/unsupported-persistence-type":
             setState("an unknown error occured");
             break;
@@ -48,40 +46,40 @@ const firerr = (code: string, setState: any) => {
             setState("Invalid verification code");
             break;
         case "auth/invalid-verification-id":
-            setState("invalid verification id");
+            setState("Invalid verification ID");
             break;
         case "auth/custom-token-mismatch":
-            setState("custom token is mismatched");
+            setState("Custom token is mismatched");
             break;
         case "auth/invalid-custom-token":
-            setState("invalid custom token");
+            setState("Invalid custom token");
             break;
         case "auth/captcha-check-failed":
-            setState("captcha failed");
+            setState("Captcha failed");
             break;
         case "auth/invalid-phone-number":
-            setState("invalid phone number");
+            setState("Invalid phone number");
             break;
         case "auth/missing-phone-number":
-            setState("please enter a phone number");
+            setState("Please enter a phone number");
             break;
         case "auth/quota-exceeded":
-            setState("authentication qota exceeded");
+            setState("Authentication qota exceeded");
             break;
         case "auth/cancelled-popup-request":
-            setState("cancelled popup authentication");
+            setState("Cancelled popup authentication");
             break;
         case "auth/popup-blocked":
-            setState("popup is blocked");
+            setState("Popup is blocked");
             break;
         case "auth/popup-closed-by-user":
-            setState("popup window is closed by the user");
+            setState("Popup window is closed by the user");
             break;
         case "auth/invalid-user-token":
-            setState("invalid user token");
+            setState("Invalid user token");
             break;
         case "auth/user-token-expired":
-            setState("user token is expired");
+            setState("User token is expired");
             break;
         case "auth/null-user":
             setState("User is null");
@@ -99,34 +97,34 @@ const firerr = (code: string, setState: any) => {
             setState("Account is temporarily disabled due to too many request");
             break;
         case "auth/id-token-expired":
-            setState("id token is expired");
+            setState("ID token is expired");
             break;
         case "auth/invalid-creation-time":
-            setState("invalid creation time, try again later");
+            setState("Invalid creation time, try again later");
             break;
         case "auth/invalid-display-name":
-            setState("invalid username");
+            setState("Invalid username");
             break;
         case "auth/invalid-email-verified":
-            setState("email is not yet verified");
+            setState("Email is not yet verified");
             break;
         case "auth/invalid-id-token":
-            setState("id token invalid");
+            setState("ID token invalid");
             break;
         case "auth/invalid-password":
-            setState("invalid password");
+            setState("Invalid password");
             break;
         case "auth/invalid-password-hash":
-            setState("invalid password hash");
+            setState("Invalid password hash");
             break;
         case "auth/invalid-photo-url":
-            setState("invalid user's profile picture");
+            setState("Invalid user's profile picture");
             break;
         case "auth/invalid-provider-id":
-            setState("invalid provider id");
+            setState("Invalid provider id");
             break;
         case "auth/invalid-session-cookie-duration":
-            setState("session cookie duration is invalid");
+            setState("Session cookie duration is invalid");
             break;
         case "auth/invalid-uid":
             setState("Invalid user id");
@@ -135,7 +133,7 @@ const firerr = (code: string, setState: any) => {
             setState("Maximum user count is exceeded");
             break;
         case "auth/missing-uid":
-            setState("Missing user id");
+            setState("Missing user AD");
             break;
         case "auth/session-cookie-revoked":
             setState("Session cookie is revoked");
@@ -147,7 +145,7 @@ const firerr = (code: string, setState: any) => {
             setState("Email is already exist, please try another email address");
             break;
         case "auth/phone-number-already-exists":
-            setState("Phone number is already exist");
+            setState("Phone number is already exist, please use another phone number");
             break;
         case "auth/project-not-found":
             setState("Firebase project not found");
@@ -156,12 +154,12 @@ const firerr = (code: string, setState: any) => {
             setState("Insufficient permisson, you are not allowed to do this operation");
             break;
         case "auth/internal-error":
-            setState("An unknown error occured on the client");
+            setState("An error occured on the client");
             break;
         default:
             setState("");
             break;
     }
-};
-
-export default firerr;
+}
+exports["default"] = firerr;
+;
