@@ -31,3 +31,5 @@ async function login(e) {
 > 🥶 Idk who install this package tho... 
 > This is my very first NPM Package.
 > I am very sorry if there's a problem! I'm only 14 yo, 15 next September 🤧
+>
+> \- qwyzex, 2022
