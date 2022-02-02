@@ -1,8 +1,8 @@
 {
     "name": "firerr",
     "version": "0.1.0",
-    "description": "Package For Catching FIrebase Error",
-    "main": "index.js",
+    "description": "Catch Firebase Error From Asynchronous Functions",
+    "main": "lib/index.js",
     "keywords": [
         "firebase",
         "error",
@@ -39,5 +39,5 @@
     "engines": {
         "node": ">=14.0.0"
     },
-    "engineStrict": true
+    "engineStrict": false
 }

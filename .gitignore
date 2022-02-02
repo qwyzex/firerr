@@ -1,6 +1,8 @@
 **/node_modules
-./lib
-./src
 
 **/*.tsbuildinfo
-**/package-lock.json
+
+./src
+./test
+
+nodemon.json
