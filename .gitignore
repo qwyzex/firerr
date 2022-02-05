@@ -2,7 +2,6 @@
 
 **/*.tsbuildinfo
 
-./src
 ./test
 
 nodemon.json

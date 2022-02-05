@@ -4,7 +4,7 @@
  * @param setState The state or variables (if you prefer) for storing the Error Value
  * @example
  * ````jsx
- * ...).catch((err) => {
+ * .catch((err) => {
  *     firerr(err.code, setError)
  * })
  *
@@ -39,7 +39,7 @@ export default function firerr(code: string, setState: any) {
         case "auth/argument-error":
         case "auth/invalid-persistence-type":
         case "auth/unsupported-persistence-type":
-            setState("an unknown error occured");
+            setState("An unknown error occured");
             break;
         case "auth/invalid-credential":
             setState("Invalid credentials");

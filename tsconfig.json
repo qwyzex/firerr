@@ -3,7 +3,6 @@
         "strict": true,
         "allowJs": true,
         "baseUrl": "./",
-        "outDir": "./lib",
         "jsx": "preserve",
         "lib": ["ES6"],
         "resolveJsonModule": true,
