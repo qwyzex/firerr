@@ -3,13 +3,15 @@
         "strict": true,
         "allowJs": true,
         "baseUrl": "./",
+        "outDir": "./lib",
         "jsx": "preserve",
         "lib": ["ES6"],
         "resolveJsonModule": true,
         "noImplicitAny": true,
         "incremental": true,
         "noUnusedLocals": true,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "declaration": true
     },
     "include": ["./src/*", "**.ts", "**.js"],
     "exclude": ["node_modules"]

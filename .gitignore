@@ -1,7 +1,4 @@
-**/node_modules
-
+node_modules
 **/*.tsbuildinfo
-
 ./test
-
 nodemon.json
