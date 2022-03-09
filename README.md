@@ -14,21 +14,39 @@ const [formError, setFormError] = useState("");
 
 Then do some 🔥 Firebase Stuff :
 
-```
+```js
 async function login(e) {
-    e.preventDefault()
-    await createUserWithEmailAndPassword(
-        auth, formEmail, formPassword
-    ).then(() => {
-        // finish
-    }).catch((error) => {
-        const code = error.code;
-        firerr(code, formError)
-    })
+    e.preventDefault();
+    await createUserWithEmailAndPassword(auth, formEmail, formPassword)
+        .then(() => {
+            // finish
+        })
+        .catch((error) => {
+            const code = error.code;
+            firerr(code, formError);
+        });
 }
 ```
 
-> 🥶 Idk who install this package tho... 
+## `firerrString()` function
+
+```js
+import { firerrString } from "firerr";
+
+async function login(e) {
+    e.preventDefault();
+    await createUserWithEmailAndPassword(auth, formEmail, formPassword)
+        .then(() => {
+            // finish
+        })
+        .catch((error) => {
+            const code = error.code;
+            alert(firerrString(code));
+        });
+}
+```
+
+> 🥶 Idk who install this package tho...
 > This is my very first NPM Package.
 > I am very sorry if there's a problem! I'm only 14 yo, 15 next September 🤧
 >
