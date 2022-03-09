@@ -10,3 +10,9 @@
  * ````
  */
 export default function firerr(code: string, setState: any): void;
+/**
+ *
+ * @param code Error Code e.g ...catch(err => firerrString(err.code))
+ * @returns String of message
+ */
+export declare const firerrString: (code: string) => string;
